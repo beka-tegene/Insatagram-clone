@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+li{
+    list-style-type: none;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #ebebeb;
+}
+.container{
+    display: flex;
+}
+.header{
+    background-color: white;
+    max-height: 100vh;
+    height: 100vh;
+    box-shadow: 1px 1px 1px #00000026;
+    width: 16%;
+    padding: 20px 2%;
+    position:fixed;
+    
+}
+.header .header-menu{
+    padding-top: 2rem;
+
+}
+.header .header-brand{
+    font-family: cursive;
+    margin-top: 2rem;
+}
+
+.header .header-menu .header-nav{
+    display: flex;
+    text-transform: capitalize;
+    gap: 1rem;
+    margin-top: 2.5rem;
+
+}
+.header .header-menu .header-nav{
+    cursor: pointer;
+
+}
+.header .more{
+    padding-top: 7rem;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+.header .more .btn{
+    transform: rotate(90deg);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    margin-left: 33%;
+}
+.hero .story{
+    background-color: white;
+    width: 450px;
+    height: 15vh;
+    margin-top: 2rem;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px #00000026;
+    display: flex;
+    align-items: center;
+    overflow:hidden;
+
+}
+
+.hero .story .story-live{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.hero .story .story-live img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 16px;
+    border: 3px solid #cf6363;
+    cursor: pointer;
+
+}
+.hero .story .story-live span{
+    font-size: 11px;
+    color: grey;
+    padding-top: 4px;
+}
+.posts span{
+    color: grey;
+}
+.hero .post{
+    width: 450px;
+    height: 650px;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 1px #00000026;
+    overflow:hidden;
+}
+.hero .post .post-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 6px;
+}
+.hero .post .post-header .post-header-name{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+/*  */
+.hero .post .post-body img{
+    width: fit-content;
+}
+
+.follow{
+    margin-top: 5rem;
+    /* margin-left: 2rem; */
+    width: 305px;
+    position: fixed;
+    right: 15%;
+}
+.follow .follow-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.follow .follow-header .follow-header-profile{
+    display: flex;
+    align-items: center;
+    
+}
+.follow .follow-header .follow-header-profile img{
+    width: 60px;
+    height: 60px;
+}
+.follow .follow-header .follow-header-profile .follow-header-name p{
+    font-size: 11px;
+    color: grey;
+    padding-left: 7px;
+    letter-spacing: 0.1em;
+    line-height: 15px;
+}
+.follow .follow-header span{
+    font-size: 11px;
+    color: #1a9ae4;
+    cursor: pointer;
+}
+.follow-suggest .follow-suggest-title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 15px 0;
+}
+.follow-suggest .follow-suggest-body{
+    max-height: 35vh;
+    font-size: 11px;
+}
+.follow-suggest .follow-suggest-body .suggest-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+.follow-suggest .follow-suggest-body .suggest-header span{
+    color: #1a9ae4;
+    cursor: pointer;
+}
+.follow-suggest .follow-suggest-body .suggest-header .suggest-header-profile{
+    display: flex;
+}
+.follow-suggest .follow-suggest-body .suggest-header .suggest-header-profile .suggest-header-name{
+    letter-spacing: 0.1em;
+    line-height: 15px;
+    margin: 0 10px;
+}
+.follow-suggest .follow-suggest-body .suggest-header .suggest-header-profile img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.follow-suggest .follow-suggest-body .suggest-header .suggest-header-profile .suggest-header-name p:first-child{
+    color: black;
+}
+.follow-suggest .follow-suggest-body .suggest-header .suggest-header-profile .suggest-header-name p:last-child{
+    color: grey;
+}
+.follow-quick{
+    font-size: 11px;
+    color: grey;
+    margin: 30px 0;
+}
+.follow-quick span{
+    cursor: pointer;
+}
+.copy{
+    font-size: 11px;
+    color: grey;
+}
